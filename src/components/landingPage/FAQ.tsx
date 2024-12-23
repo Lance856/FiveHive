@@ -24,10 +24,6 @@ const FAQData = [
     answer:
       "We welcome contributions from AP students like you! Whether you have study notes, practice exams, or helpful tips to share, you can submit your content to be reviewed and added to our resource library. Join us in building a community-driven platform for AP exam preparation.",
   },
-  {
-    question: "How can I help?",
-    answer: "",
-  }
 ];
 
 const FAQ = () => {
