@@ -3,6 +3,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
 
 // Goes in backend
 
@@ -34,6 +35,13 @@ const FAQ = () => {
             className={`${index === 0 && "text-left"} text-2xl font-bold`}
           >
             {`${FAQ.question}`}
+            <Link
+              href="https://docs.google.com/document/d/1nV0nmzRKbgmVucE93ujft6tY-rQ-xPxLEahjuSpFz3s"
+              className="font-bold text-blue-500 hover:underline"
+            >
+              {" "}
+              Apply Here!
+            </Link>
           </AccordionTrigger>
           <AccordionContent>{`${FAQ.answer}`}</AccordionContent>
         </AccordionItem>
