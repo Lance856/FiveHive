@@ -24,6 +24,10 @@ const FAQData = [
     answer:
       "We welcome contributions from AP students like you! Whether you have study notes, practice exams, or helpful tips to share, you can submit your content to be reviewed and added to our resource library. Join us in building a community-driven platform for AP exam preparation.",
   },
+  {
+    question: "How can I help?",
+    answer: "",
+  }
 ];
 
 const FAQ = () => {
@@ -35,15 +39,17 @@ const FAQ = () => {
             className={`${index === 0 && "text-left"} text-2xl font-bold`}
           >
             {`${FAQ.question}`}
+          </AccordionTrigger>
+          <AccordionContent>
+            {`${FAQ.answer}`}
             <Link
               href="https://docs.google.com/document/d/1nV0nmzRKbgmVucE93ujft6tY-rQ-xPxLEahjuSpFz3s"
               className="font-bold text-blue-500 hover:underline"
             >
-              {" "}
+              {FAQ.answer.length > 0 && " "}
               Apply Here!
             </Link>
-          </AccordionTrigger>
-          <AccordionContent>{`${FAQ.answer}`}</AccordionContent>
+          </AccordionContent>
         </AccordionItem>
       ))}
     </>
