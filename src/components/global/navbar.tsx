@@ -100,7 +100,7 @@ const Navbar = ({
       </div>
 
       {/* Unclosable Popup */}
-      <div className="w-full bg-yellow-300 px-4 py-2 text-center text-yellow-900 shadow-md md:py-4 text-lg">
+      <div className="sticky top-0 z-50 w-full bg-yellow-300 px-4 py-2 text-center text-yellow-900 shadow-md md:py-4 text-lg">
         <span className="text-sm font-semibold md:text-base">
           This is a demo.{" "}
           Check out an{" "}
